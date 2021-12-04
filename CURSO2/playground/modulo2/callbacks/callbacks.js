@@ -1,3 +1,28 @@
+//---------------Callbacks--------------------
+
+//------------Sintaxis de un Callback---------------
+
+/* 
+function funcionPadre(function () {
+    sentencia de codigo
+}) 
+ */
+/* 
+//Definicion
+function vaComoParametro() {
+    return 'Soy un callback';
+}
+//Ejecucion
+funcionPadre(vaComoParametro)
+//Soy un callback
+ */
+
+
+
+//--------------Ejemplo Calculadora con Callback---------------
+
+
+
 /* 
 let sumar = (numero1, numero2) => numero1 + numero2;
 let restar = (numero1, numero2) => numero1 - numero2;
@@ -12,6 +37,12 @@ console.log(calculadora(18, 3, multiplicar));
 console.log(calculadora(18, 3, dividir)); 
 */
 
+
+
+//--------------Ejemplo SetTimeOut con Callback---------------
+
+
+
 /* 
 setTimeout ( function(){
     console.log('Hola Mundo!');
@@ -21,25 +52,45 @@ let miCallback = () => console.log('Hola mundo!');
 setTimeout(miCallback, 1000)
  */
 
+
+//--------------Ejemplo Nombre completo con Callback---------------
+
+
+
 /* 
 function nombreCompleto(nombre, apellido){
     return nombre + ' ' + apellido;
 };
-//console.log(nombreCompleto('Gustavo', 'Mei'));
+console.log(nombreCompleto('Gustavo', 'Mei'));//muestra Hola Gustavo Mei
 
-function saludar(nombre, apellido, callback){
+function saludar(nombre, apellido, callback){//Recibe un callback como parametro
     return  '¡Hola ' + callback(nombre, apellido) + '!';
 };
 
-saludar('Juanito', 'Sanchez', nombreCompleto);
+console.log(saludar('Juanito', 'Sanchez', nombreCompleto));//Muestra Hola Juanito Sanchez!
+*/
 
+
+
+//--------------Ejemplo Nombre con Iniciales con Callback---------------
+
+
+
+/* 
+function saludar(nombre, apellido, callback){//Recibe un callback como parametro
+    return  '¡Hola ' + callback(nombre, apellido) + '!';
+};
 
 function iniciales(nombre, apellido){
     return nombre[0] + apellido[0];
 };
 console.log(saludar('Juanito', 'Sanchez', iniciales));
-
  */
+
+
+//--------------Ejercicios Playground---------------
+
+
 /* 
 Pasar un callback
 Vamos a crear tres funciones y ver cómo empezar a trabajar con callbacks.
