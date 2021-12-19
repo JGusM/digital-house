@@ -186,4 +186,3 @@ function sumar(...numeros) {
 console.log(sumar(1, 4));//muestra 5
 console.log(sumar(13, 6, 8, 12, 23, 37));// muestra 99
  */
-
