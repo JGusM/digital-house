@@ -1,14 +1,17 @@
-/* ---------push--------
+//---------push--------
+/* 
 let nombres = [ "Juana", "Mariana", "Pablo" ];
 let elPrimero = nombres.push("Gustavo");
 console.log(nombres);
-console.log(elPrimero);*/
-
-/*---------pop--------
+console.log(elPrimero);
+ */
+//---------pop--------
+/*
 let nombres = [ "Juana", "Mariana", "Pablo" ];
 let elPrimero = nombres.pop();
 console.log(nombres);
-console.log(elPrimero);*/
+console.log(elPrimero);
+*/
 
 /* ---------unshift--------
 let nombres = [ "Juana", "Mariana", "Pablo" ];
@@ -136,7 +139,7 @@ let arrayFrase = [
   let fraseNueva = arrayFrase.join(" ")
   console.log(fraseNueva);
 
-
+  
   Pop
 ¡Sí! ¡Alexis se egresó del terciario!
 Para este ejercicio contamos con el array estudiantes, en donde, en cada índice, almacena un objeto con las propiedades nombre, promedio y curso.
@@ -201,23 +204,23 @@ Se dio de baja un alumno.
 Tenemos que dar de baja al primer estudiante y queremos sacarlo del array estudiantes. Para eso, debemos crear una variable llamada alumnoDeBaja y, utilizando un método de array, almacenar en ella a ese primer estudiante.
 
  let estudiantes = [
-         {
-            nombre: 'Alvaro',
-            promedio : 9,
+   {
+     nombre: 'Alvaro',
+     promedio : 9,
             curso : 'Android',
           },
            {
              nombre: 'Daniel',
              promedio : 6,
              curso : 'Full Stack',
-           },
+            },
            {
              nombre: 'Alexis',
              promedio : 3,
              curso : 'iOS',
-           },
+            },
          ]
-
+         
          let alumnoDeBaja = estudiantes.shift();
 
 unshift
@@ -225,40 +228,41 @@ Se reintegraron alumnos.
 Tenemos la tarea de reintegrar a dos estudiantes que se habían registrado al principio de todo, se dieron de baja, ¡pero volvieron! Y para que no pierdan su lugar privilegiado queremos, utilizando un método de array, agregar al inicio del mismo a cada estudiante (de a uno a la vez).
 Los datos que hay que agregar de cada uno son:
          
-         nombre: "Mariana",
+nombre: "Mariana",
          promedio: 9,
          curso: "Full Stack"
          -------------------------
          nombre: "Francisco",
          promedio: 2,
          curso: "Android"
-
+         
     let estudiantes = [
         {
                 nombre: 'Alvaro',
                 promedio : 9,
                 curso : 'Android',
+              },
+                {
+                  nombre: 'Daniel',
+                  promedio : 6,
+                  curso : 'Full Stack',
                 },
                 {
-                nombre: 'Daniel',
-                promedio : 6,
-                curso : 'Full Stack',
-                },
-                {
-                nombre: 'Alexis',
+                  nombre: 'Alexis',
                 promedio : 3,
                 curso : 'iOS',
                 }
-            ]
-            estudiantes.unshift({nombre: "Mariana", promedio: 9, curso:"Full Stack"})
+              ]
+              estudiantes.unshift({nombre: "Mariana", promedio: 9, curso:"Full Stack"})
             estudiantes.unshift({nombre: "Francisco", promedio: 2, curso:"Android"})
-
+            
             console.log(estudiantes);*/
 
-
-          
-
-
-
-
-
+            
+            
+            
+            
+            
+            
+            
+            
