@@ -1,0 +1,15 @@
+[
+    {
+        "titulo": "practicar el switch",
+        "descripcion": "entender donde pudo utilizarlo",
+        "estado": "pendiente"
+    },
+    {
+        "titulo": "practicar el for",
+        "estado":"terminado"
+    },
+    {
+        "titulo":"ver json",
+        "estado":"pendiente"
+    }
+]
