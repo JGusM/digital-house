@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -8,6 +9,15 @@ body {
     background-color: #ebebeb;
 }
 
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 12px;
+}
+
+/*-------------------------------------------HEADER-----------------------------------*/
 header {
     background-color: #EAC926; ;
     }
@@ -17,7 +27,7 @@ header div.logo {
     padding: 10px;
 }
 
-.burger-menu {
+header .burger-menu {
     text-align: center;
     background-color: #1259c3;
     border-radius: 10%;
@@ -27,10 +37,9 @@ header div.logo {
     margin-top: 20px;*/
     margin: auto;
     width: 28px;
-        
 }
 
-.compra {
+header .compra {
     text-align: center;
 }
 
@@ -40,13 +49,46 @@ header a {
     text-align: left;
 }
 
+header nav {
+    display: none;
+}
 
+/*-----------------------------------------MAIN--------------------------------------------*/
+
+main section {
+    width: 90%;
+    margin: auto;
+}
+
+main section article {
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+main section article div {
+    border: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+main section article div i {
+    color: #39b54a;
+}
+
+main section article div .descuento {
+    color: #39b54a;
+}
+
+main section article div h2 {
+    display: none;
+}
+
+/*-----------------------------------------FOOTER------------------------------------------*/
 
 footer {
     text-align: center;
     text-align: center;
-        margin-left: 60px;
-        margin-right: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 footer i {
@@ -65,3 +107,43 @@ footer section {
     text-align: left;
     font-size: 12px;
 }
+
+/*-----------------------------MEDIA QUERY-------------------------*/
+
+@media (min-width: 361px){
+    main section article div h2 {
+        display: block;
+    }
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    header nav {
+        display: block;
+    }
+    header div #burger {
+        display: none;
+    }
+    
+}
+
+@media (min-width: 769px){
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
