@@ -12,6 +12,7 @@ body {
 h2 {
     font-size: 24px;
     color: #666;
+    width: 100%;
 }
 
 p {
@@ -19,14 +20,44 @@ p {
 }
 
 /*-------------------------------------------HEADER-----------------------------------*/
+
 header {
     background-color: #EAC926; ;
-    }
+}
 
-header div.logo {
+header div.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header div.top-header div.logo {
     width: 50%;
     padding: 10px;
+    flex-grow: 45;
 }
+
+header div.top-header div.form {
+    width: 50%;
+    flex-grow: 45;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+header div.top-header div i {
+    width: 100%;
+}
+header div.top-header div.form .input {
+    width: 80%;
+}
+
+
+header div.top-header div.form .button {
+    width: 10%;
+}
+
 
 header .burger-menu {
     text-align: center;
@@ -34,14 +65,10 @@ header .burger-menu {
     border-radius: 10%;
     color: white;
     padding: 4px;
-    /*margin-left: 50%;
-    margin-top: 20px;*/
     margin: auto;
     width: 28px;
-}
-
-header .compra {
-    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 header a {
@@ -60,9 +87,12 @@ main section {
     width: 90%;
     margin: auto;
     background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 main section article {
+    width: 100%;
     margin-bottom: 10px;
     background-color: #fff;
 }
@@ -70,7 +100,9 @@ main section article {
 main section article div {
     border: 1px solid #ebebeb;
     padding: 15px;
-    
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 main section article div h3 {
@@ -78,14 +110,18 @@ main section article div h3 {
 }
 
 main section article div i {
+    /* esta era mi camion original
+    
     color: #39b54a;
     border: 1px solid #39b54a ;
     border-radius: 50%;
     padding: 5px 15px 15px 5px;
-    position: absolute;
-    right: 20px;
     
-    /*display: block;
+    el que sigue lo copie de la ejercitacion
+    */
+    
+    color: #39b54a;
+    display: block;
     font-size: 16px;
     padding: 5px;
     width: 30px;
@@ -95,16 +131,18 @@ main section article div i {
     border-radius: 50%;
     position: absolute;
     right: 20px;
-    top: -15px;*/
+    top: -15px;
+}
+
+main section article div .precio {
+    width: 30%;
 }
 
 main section article div .descuento {
     color: #39b54a;
+    width: 70%;
 }
 
-main section article div h2 {
-    display: none;
-}
 
 /*-----------------------------------------FOOTER------------------------------------------*/
 
@@ -134,43 +172,57 @@ footer section {
 /*-----------------------------MEDIA QUERY-------------------------*/
 
 @media (min-width: 361px){
-    main section article div h2 {
-        display: block;
-    }
-
     main section article div h3 {
         display: block;
     }
-
+    
     main section article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 50%;
     }
     header nav {
         display: block;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        
     }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header nav ul li {
+        flex-grow: 1;
+    }
+
     #burger {
         display: none;
     }
     
+    header div.top-header{
+        flex-wrap: nowrap;
+    }
+    header div.top-header div.logo {
+        flex-grow: 1;
+    }
+    
+    header div.top-header div.form {
+        flex-grow: 1;
+    }
+
+    header div.top-header div i {
+        flex-grow: 1;
+    }
 }
+
 
 @media (min-width: 769px){
-    
+    main section article {
+        width: 25%;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
