@@ -46,6 +46,21 @@ header div.top-header div.form {
     justify-content: center;
 }
 
+header .header-compra {
+    display: -webkit-inline-box;
+    margin-right: 100px;
+
+}
+
+header .header-compra i {
+    margin-right: 20px;
+}
+
+header .header-compra p {
+    width: 110%;
+    font-size: 12px;
+}
+
 header div.top-header div i {
     width: 100%;
 }
@@ -81,7 +96,10 @@ header nav {
     display: none;
 }
 
-/*-----------------------------------------MAIN--------------------------------------------*/
+
+/*------------------------------------------FIN DEL HEADER-----------------------------------*/
+
+/*-----------------------------------------------MAIN--------------------------------------------*/
 
 main section {
     width: 90%;
@@ -143,8 +161,9 @@ main section article div .descuento {
     width: 70%;
 }
 
+/*-----------------------------------------------FIN DEL MAIN--------------------------------------------*/
 
-/*-----------------------------------------FOOTER------------------------------------------*/
+/*-------------------------------------------------FOOTER------------------------------------------*/
 
 footer {
     text-align: center;
@@ -169,8 +188,9 @@ footer section {
     font-size: 12px;
 }
 
+/*-------------------------------------------FIN DEL FOOTER------------------------------------------*/
 
-/*------------------------FORMULARIO DE REGISTRO----------------------------------------*/
+/*--------------------------------------FORMULARIO DE REGISTRO----------------------------------------*/
 
 .form-register {
     background-color: #ebebeb;
@@ -196,7 +216,9 @@ input {
     margin-left: -15px;
 }
 
-/*------------------------FORMULARIO DE LOGIN----------------------------------------*/
+/*-----------------------------------FIN DEL FORMULARIO DE REGISTRO----------------------------------------*/
+
+/*---------------------------------------FORMULARIO DE LOGIN----------------------------------------*/
 
 .form-login {
     display: flex;
@@ -221,9 +243,12 @@ input {
     color: white;
     padding: 10px;
     border-radius: 8px;
+    transition: 1000ms;
 }
 
-/*-----------------------------MEDIA QUERY-------------------------*/
+/*------------------------------------FIN DEL FORMULARIO DE LOGIN----------------------------------------*/
+
+/*--------------------------------------------MEDIA QUERY------------------------------------------*/
 
 @media (min-width: 361px){
     main section article div h3 {
@@ -241,15 +266,21 @@ input {
         align-items: flex-end;
         
     }
-
+    
     header nav ul {
         display: flex;
         justify-content: space-around;
+        width: 40%;
+        align-items: flex-start;
     }
-
+    
     header nav ul li {
         flex-grow: 1;
+        margin: 0 15px;
+
     }
+
+
 
     #burger {
         display: none;
@@ -266,18 +297,76 @@ input {
         flex-grow: 1;
     }
 
-    header div.top-header div i {
+    header .header-compra p {
+        font-size: 24px;
+    }
+
+    header div.top-header .header-compra {
         flex-grow: 1;
     }
 }
 
 
+
+
 @media (min-width: 769px){
     main section article {
         width: 25%;
-    }
+    
+}
+
+h3 {
+opacity: 0;
+transition: 1000ms;
+}
+
+h3:hover {
+opacity: 1;
+}
+
+main section article {
+    box-shadow: 0px 0px 0px rgb(100, 100, 100);
+    transition: 1s;
+}
+
+main section article:hover {
+    box-shadow: 0px 0px 30px rgb(100, 100, 100);
+    
+}
+
+main section article i:hover {
+    transform: rotate(-90deg);
+    transition: 1000ms;
+}
+
+.form-login div button:hover {
+    background-color: #02A;
 }
 
 
+footer{
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+}
+
+footer i {
+    color: #1259c3;
+    text-align: center;
+    font-size: 2em;
+}
+
+footer section {
+    margin-top: 80px;
+    margin-bottom: 80px;   
+}
+
+
+
+
+}
+
+/*-----------------------------------------FIN DEL MEDIA QUERY------------------------------------------*/
 
 
