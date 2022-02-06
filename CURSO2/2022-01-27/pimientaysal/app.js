@@ -4,7 +4,8 @@ const express = require('express');
 const app = express();
 // Acá falta uno... 
 
-const rutas = require("./routes/mainRoutes")
+const main = require("./routes/mainRoutes")
+const cliente = require("./routes/cliente.routes")
 const port = 3030
 
 // Configuración
@@ -16,8 +17,9 @@ app.set('view engine', 'ejs')
 
 // Rutas
 // Acá falta el archivo de rutas y después las vistas de EJS
-app.use('/', rutas)
-app.use('/menu', rutas)
+app.use('/', main)
+app.use('/cliente', cliente)
+
 
 app.get('*', (req, res) => {
     res.send('not found')

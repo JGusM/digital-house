@@ -1,11 +1,10 @@
-var express = require('express');
+const express = require('express');
+const router = express.Router(); 
+
 const productsController = require('../controllers/productsController');
 
-var router = express.Router(); 
+router.get('/', productsController.index); /* GET - home page  */
 
-
-router.get('/home', productsController.index); /* GET - home page  */
-
-router.get('/menu', productsController.mostrarDetalle); /* GET - detalle page  */
+router.get('/menu/:id', productsController.detalleMenu); /* GET - detalle page  */
 
 module.exports = router; //Exportamos todo el contenido de la ruta para hacerlo visible
