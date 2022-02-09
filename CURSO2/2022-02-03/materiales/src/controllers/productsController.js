@@ -19,12 +19,20 @@ const controller = {
 
 	// Create - Form to create
 	create: (req, res) => {
-		// Do the magic
+		res.render('product-create-form')
 	},
 	
 	// Create -  Method to store
 	store: (req, res) => {
-		// Do the magic
+		const {name, price, discount, category, description} = req.body
+		const nuevoProducto = { 
+			name: name,
+			price: price,
+			discount: discount,
+			category: category,
+			description: description
+		}
+		res.redirect('/')
 	},
 
 	// Update - Form to edit
