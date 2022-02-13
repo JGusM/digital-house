@@ -6,6 +6,7 @@ const productos = [
     plato: "Carpaccio fresco",
     descripcion: "Entrada Carpaccio de salmón con cítricos",
     precio: "U$S 65.50",
+    imagen: "../public/images/Carpaccio-de-salmon.jpg"
   },
 
   {
