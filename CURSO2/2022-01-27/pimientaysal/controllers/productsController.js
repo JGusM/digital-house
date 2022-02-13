@@ -6,7 +6,7 @@ const productos = [
     plato: "Carpaccio fresco",
     descripcion: "Entrada Carpaccio de salmón con cítricos",
     precio: "U$S 65.50",
-    imagen: "../public/images/Carpaccio-de-salmon.jpg"
+    imagen: "/images/Carpaccio-de-salmon.jpg"
   },
 
   {
@@ -14,25 +14,28 @@ const productos = [
     plato: "Risotto de berenjena",
     descripcion: "Risotto de berenjena y queso de cabra",
     precio: "U$S 47.00",
+    imagen: "/images/Risotto-berenjena-queso-cabra.jpg"
   },
   {
     id: 3,
     plato: "Mousse de arroz",
     descripcion: "Mousse de arroz con leche y aroma de azahar",
     precio: "U$S 27.50",
+    imagen: "/images/Mousse-de-arroz-con-leche.jpg"
   },
   {
     id: 4,
     plato: "Espárragos blancos",
     descripcion: "Espárragos blancos con vinagreta de verduras y jamón ibérico",
     precio: "U$S 37.50",
+    imagen: "/images/esparragos.png"
   },
 ];
 
 const main = {
   index: (req, res) => {
     // res.sendFile(path.resolve(__dirname, '../views/index.html'));
-    res.render("index", { dato: "soy un dato", productos: productos });
+    res.render("index", { productos: productos });
   },
   detalleMenu: (req, res) => {
     const id = req.params.id  
@@ -42,7 +45,7 @@ const main = {
             producto = productos[i]
         }
     }
-    res.render("detalleMenu", { producto});
+    res.render("detalleMenu", { producto });
   },
 };
 

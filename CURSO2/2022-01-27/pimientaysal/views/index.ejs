@@ -52,7 +52,7 @@
           <h1 class="ps-center">Nuestro Menu</h1>
           <br />
           <% for (let producto of productos){ %>
-            <h4><%= producto.plato %></h4>
+            <a href="./detalle"> <h4><%= producto.plato %></h4> </a>
             <p class="ps-text-grey">
               <%= producto.descripcion + " " + producto.precio %>
             </p>
